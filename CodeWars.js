@@ -44,7 +44,7 @@ function findNextPower(x, n) {
 }
 
 
-'The Office I - Outed'
+/*'The Office I - Outed'*/
 function outed(meet, boss){
     var total = 0
     var result = 0
@@ -58,4 +58,14 @@ function outed(meet, boss){
     result = total/Object.keys(meet).length
     if(result<=5) return 'Get Out Now!'
     return 'Nice Work Champ!'
+}
+/*'Running out of space'*/
+function spacey(arr){
+    let result = [];
+    let current = '';
+    for (let i = 0; i < arr.length; i++) {
+        current += arr[i].replace(/ /g, '');
+        result.push(current);
+    }
+    return result;
 }
