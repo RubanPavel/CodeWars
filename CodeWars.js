@@ -44,5 +44,18 @@ function findNextPower(x, n) {
 }
 
 
-
-
+The Office I - Outed
+function outed(meet, boss){
+    var total = 0
+    var result = 0
+    for(var key in meet){
+        if(key==boss) {
+            total += meet[key]*2
+        } else {
+            total += meet[key]
+        }
+    }
+    result = total/Object.keys(meet).length
+    if(result<=5) return 'Get Out Now!'
+    return 'Nice Work Champ!'
+}
