@@ -69,3 +69,12 @@ function spacey(arr){
     }
     return result;
 }
+
+// Sum of a sequence
+const sequenceSum = (begin, end, step) => {
+    rez = 0
+    for (let i = begin; i <= end; i+=step) {
+        rez += i
+    }
+    return rez
+};
